@@ -82,7 +82,6 @@ const setGlobal = (path, f) => {
 // In practice, I would make the component much more generic
 // I made it specific to make it more concrete
 function EmailForm({ root, onSubmit }) {
-  console.log("root of emailform", root)
   const state = UseGlobal(root, { email: "" })
   return (<form onSubmit={() => onSubmit(storeState(["signup"]))}>
     <div>Email <input
